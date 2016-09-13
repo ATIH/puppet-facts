@@ -9,8 +9,6 @@ define facts::instance (
   file { "${facts::facterpath}/${factname}.txt":
     ensure  => $ensure,
     content => "${factname}=${value}",
-    group   => 'root',
     mode    => '0664',
-    owner   => 'root',
   }
 }
