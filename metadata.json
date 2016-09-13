@@ -8,8 +8,20 @@
   "project_page": "https://github.com/ATIH/puppet-facts",
   "issues_url": "https://github.com/ATIH/puppet-facts/issues",
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ],
-  "data_provider": null
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease":["7.x", "8.x"]
+    },
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease":["2012 R2"]
+    },
+    {
+      "operatingsystem": "Solaris",
+      "operatingsystemrelease":["10", "11"]
+    }
+  ]
 }
-
